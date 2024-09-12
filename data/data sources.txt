@@ -1,0 +1,3 @@
+^GSPC.csv = https://finance.yahoo.com/quote/%5EGSPC/history?period1=-631152000&period2=1590969600&interval=1d&filter=history&frequency=1d
+^GSPC_update.csv
+us_inflation.csv = https://www.usinflationcalculator.com/inflation/historical-inflation-rates/
