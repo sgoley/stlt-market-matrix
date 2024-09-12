@@ -111,12 +111,6 @@ with st.container():
     # create a heatmap with a grid of squares
     # each square should have the average return of the starting year and the ending year
 
-    st.write("Data range:")
-    st.write(f"Earliest year: {sp500_inflation['Year'].min()}")
-    st.write(f"Latest year: {sp500_inflation['Year'].max()}")
-    st.write("Sample of data:")
-    st.write(sp500_inflation.groupby("Year").first().head())
-
     # Create a matrix with dimensions from the start to end year of sp500_inflation
     start_year = sp500_inflation["Year"].min()
     end_year = sp500_inflation["Year"].max()
