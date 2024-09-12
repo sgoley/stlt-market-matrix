@@ -49,7 +49,7 @@ us_inflation["Month"] = us_inflation["Month"].apply(
 # sort by Year and Month + reset index
 us_inflation = us_inflation.sort_values(by=["Year", "Month"]).reset_index(drop=True)
 
-st.write(us_inflation)
+# st.write(us_inflation)
 
 # ---------------------------------------------------
 
@@ -95,14 +95,14 @@ sp500_inflation["Real_Growth"] = (
     sp500_inflation["Close"] / sp500_inflation["Inflation"]
 ) / sp500_inflation["Close"].shift(1)
 
-st.write(sp500_inflation)
+# st.write(sp500_inflation)
 
 # ---------------------------------------------------
 
 with st.sidebar:
     metric = st.selectbox("Select a metric", options=["Nominal_Growth", "Real_Growth"])
 
-    st.write(metric)
+    # st.write(metric)
 
 with st.container():
     # lets filter the data to only include up through 2023
